@@ -1,0 +1,60 @@
+@import 'datatables.net-dt';
+@import 'datatables.net-buttons-dt';
+@import 'datatables.net-select-dt';
+@import 'datatables.net-responsive-dt';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* DataTables Flowbite Theme Override */
+.dataTables_wrapper {
+    @apply text-gray-900 dark:text-white;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+}
+
+.dataTables_wrapper .dataTables_length select {
+    @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+    padding-right: 4rem !important;
+    min-width: 18rem !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    @apply bg-blue-600 text-white;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    @apply border-gray-300 text-gray-700 bg-white hover:bg-gray-50 dark:bg-gray-700 dark:border-gray-600 dark:text-gray-300 dark:hover:bg-gray-600;
+}
+
+.dataTables_wrapper table.dataTable {
+    @apply border-collapse border border-gray-300 dark:border-gray-600;
+}
+
+.dataTables_wrapper table.dataTable thead tr {
+    @apply bg-gray-100 dark:bg-gray-800;
+}
+
+.dataTables_wrapper table.dataTable thead th {
+    @apply border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white font-semibold p-3;
+}
+
+.dataTables_wrapper table.dataTable tbody td {
+    @apply border-gray-300 dark:border-gray-600 p-3;
+}
+
+.dataTables_wrapper table.dataTable tbody tr:hover {
+    @apply bg-gray-50 dark:bg-gray-700;
+}
+
+.dt-buttons {
+    @apply space-x-2;
+}
+
+.dt-button {
+    @apply inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500;
+}
