@@ -2,6 +2,13 @@
     <x-slot name="header"></x-slot>
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+        .employee-dashboard {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-weight: 700;
+        }
+
         .employee-app-shell {
             background: radial-gradient(1200px 600px at 15% 10%, #f1e57b 0%, #f8fafc 55%, #96c0f6 100%);
         }
@@ -40,7 +47,21 @@
         .employee-dashboard footer {
             padding-left: 0 !important;
             padding-right: 0 !important;
-            background: transparent;
+            background: #93c5fd;
+        }
+
+        .employee-dashboard.employee-footer-space main {
+            padding-bottom: 5rem;
+        }
+
+        .employee-dashboard .employee-footer {
+            height: 4rem;
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem;
+        }
+
+        .employee-dashboard .employee-footer nav > div {
+            height: 100%;
         }
 
         .employee-float-in {
@@ -75,7 +96,7 @@
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-5 px-4 sm:px-0">
                 <div class="employee-card employee-card-light employee-time-card employee-float-in p-6 sm:p-7 text-center" style="animation-delay: 60ms;">
-                    <div id="ph-time" class="font-extrabold text-gray-900 leading-none" style="font-size: clamp(3.5rem, 9vw, 5.75rem);">--:--:--</div>
+                    <div id="ph-time" class="font-light text-gray-900 leading-none" style="font-size: clamp(2.8rem, 7.5vw, 4.5rem);">--:--:--</div>
                     <div id="ph-date" class="mt-2 text-sm text-gray-600">---</div>
                 </div>
                 <div class="employee-card employee-card-accent employee-float-in p-3 sm:p-4" style="animation-delay: 120ms;">
